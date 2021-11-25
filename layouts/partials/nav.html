@@ -1,0 +1,10 @@
+<header class="absolute top-0 left-0 w-full p-4 lg:py-6 lg:px-8 flex items-center justify-between text-white">
+    <p class="font-play-fair text-xl lg:text-2xl xl:text-3xl">Tecnología Persuasiva</p>
+    <nav>
+        <ul class="hidden lg:flex lg:items-center">
+            {{ range .Site.Menus.main }}
+            <li class="mr-8"><a href="{{ .URL }}">{{ .Title }}</a></li>
+            {{ end }}
+        </ul>
+    </nav>
+</header>
